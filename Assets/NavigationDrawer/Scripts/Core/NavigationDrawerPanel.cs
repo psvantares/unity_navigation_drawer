@@ -53,6 +53,8 @@ namespace NavigationDrawer.Core
 
         private void Awake()
         {
+            Application.targetFrameRate = 60;
+
             rectTransform = gameObject.GetComponent<RectTransform>();
             backgroundRectTransform = backgroundImage.GetComponent<RectTransform>();
             backgroundCanvasGroup = backgroundImage.GetComponent<CanvasGroup>();
